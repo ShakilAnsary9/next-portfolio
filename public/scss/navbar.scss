@@ -1,0 +1,38 @@
+/* Navbar CSS */
+.web__navbar {
+  height: 75px;
+  border-bottom: 1px solid $border;
+  position: fixed;
+  z-index: 999;
+  backdrop-filter: blur(20px);
+  top: 0;
+}
+.logo {
+  height: 100%;
+  width: 75px;
+  padding: 12px;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+.desk__menu {
+  font-family: "Poppins";
+  font-weight: 500;
+  ul {
+    height: 100%;
+    li {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding: 0 30px;
+      border-left: 1px solid $border;
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $black;
+      }
+    }
+  }
+}
