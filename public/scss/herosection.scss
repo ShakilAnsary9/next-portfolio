@@ -5,8 +5,11 @@
   margin-left: 75px;
   .hero__wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     position: relative;
+    width: 100%;
+    margin-top: 6rem;
     h1 {
       font-size: 6rem;
       font-weight: 600;
@@ -25,28 +28,6 @@
         position: relative;
         color: $primary;
         background-color: $black;
-        // background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
-        // background-clip: text;
-        // -webkit-background-clip: text;
-        // -webkit-text-fill-color: transparent;
-        // animation: hue 10s infinite linear;
-        // -webkit-animation: hue 10s infinite linear;
-      }
-      @keyframes hue {
-        from {
-          -webkit-filter: hue-rotate(0deg);
-        }
-        to {
-          -webkit-filter: hue-rotate(-360deg);
-        }
-      }
-      @-webkit-keyframes hue {
-        from {
-          -webkit-filter: hue-rotate(0deg);
-        }
-        to {
-          -webkit-filter: hue-rotate(-360deg);
-        }
       }
     }
     .blob {
@@ -55,7 +36,7 @@
       height: 500px;
       position: absolute;
       top: -80px;
-      right: -150px;
+      right: -10px;
       z-index: 1;
       filter: blur(80px);
       border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
@@ -76,6 +57,61 @@
       }
       75% {
         border-radius: 60% 70% 40% 80% / 80% 60% 70% 40%;
+      }
+    }
+  }
+}
+
+.hero__cta {
+  margin-top: 4rem;
+  position: relative;
+  z-index: 2;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .intro {
+    margin-left: 60px;
+    padding-top: 50px;
+    p {
+      font-size: 1.2rem;
+      font-family: $font-secondary;
+      padding-right: 20px;
+      color: $border;
+    }
+  }
+  .hero__btn {
+    width: fit-content;
+    .btn__text {
+      font-size: 1.6rem;
+      padding: 10px 40px;
+      border: 1px solid $border;
+      border-radius: 50px;
+      backdrop-filter: blur(80px);
+    }
+    .btn__icon {
+      aspect-ratio: 1/1;
+      width: 60px;
+      border: 1px solid $border;
+      border-radius: 50px;
+      backdrop-filter: blur(80px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        transform: rotate(-45deg);
+        transition: all ease-in 0.2s;
+      }
+    }
+    &:hover {
+      .btn__icon {
+        i {
+          transform: rotate(0deg);
+        }
       }
     }
   }

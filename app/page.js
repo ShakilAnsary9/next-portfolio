@@ -1,5 +1,6 @@
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
+import ScrollDownButton from "./components/ScrollDown";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         <div className="line line__01"></div>
         <div className="line line__02"></div>
         <div className="line line__03"></div>
-        <div className="scroll__down">Scroll Down</div>
+        <ScrollDownButton />
       </div>
     </main>
   );
