@@ -1,5 +1,6 @@
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
 import ScrollDownButton from "./components/ScrollDown";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         <Navbar />
         <div className="web__content">
           <HeroSection />
+          <Projects />
           <div className="content-box"></div>
         </div>
         <div className="line line__01"></div>

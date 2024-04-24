@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.scss";
 import BootstrapClient from "./components/BootstrapClient";
+import PreLoader from "./components/PreLoader";
 
 export const metadata = {
   title: "Shakil Ansary",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       <body>
         {children}
         <BootstrapClient />
+        <PreLoader />
       </body>
     </html>
   );

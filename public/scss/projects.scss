@@ -1,0 +1,31 @@
+.heading__comp {
+  display: flex;
+  .section__sub__heading {
+    color: $white;
+    background-color: $black;
+    padding: 3px 10px;
+    text-transform: uppercase;
+    font-family: Space Mono;
+    width: fit-content;
+  }
+  .section__heading {
+    font-family: $font-primary;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: italic;
+    color: $white;
+    background-color: $black;
+    padding: 0 20px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      aspect-ratio: 1/1;
+      background-color: $black;
+      left: 100%;
+      bottom: 100%;
+    }
+  }
+}

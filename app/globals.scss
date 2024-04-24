@@ -43,6 +43,10 @@ main {
   left: 75px;
 }
 
+.m__75 {
+  margin-left: 75px;
+}
+
 .scroll__down {
   position: fixed;
   bottom: 120px;
@@ -67,3 +71,5 @@ main {
 
 @import "../public/scss/navbar.scss";
 @import "../public/scss/herosection.scss";
+@import "../public/scss/projects.scss";
+@import "../public/scss/preloader.scss";
